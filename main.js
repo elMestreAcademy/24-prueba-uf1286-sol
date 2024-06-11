@@ -1,10 +1,14 @@
+function randInt(max) {
+  return Math.floor(Math.random() * max + 1);
+}
+
 function generarArrayBidimensional() {
   function generarArray() {
-    return [0, 1, 2];
+    return [randInt(10), randInt(10), randInt(10)];
   }
 
   var array = [];
-  for (var i = 0; i < 10; i++) {
+  for (i = randInt(4); i < 10; i++) {
     array.push(generarArray());
   }
   return array;
